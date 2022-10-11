@@ -5,8 +5,7 @@
   "main": "main.js",
   "types": "main.d.js",
   "scripts": {
-    "prestart": "npm run build",
-    "start": "node main.js",
+    "start": "node src/index.ts",
     "build": "npx webpack --config webpack.config.js",
     "fix-import": "npx import-fixer --groupImport --aggressive --transformRelativeImport --importQuote=single",
     "preformat": "npm run fix-import",
@@ -25,8 +24,9 @@
   },
   "homepage": "https://github.com/synle/google-keep-note-backup#readme",
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
     "@googleapis/docs": "^1.0.1",
-    "googleapis": "^108.0.0",
+    "googleapis": "^105.0.0",
     "synle-rest-utils": "^1.0.2"
   },
   "devDependencies": {
