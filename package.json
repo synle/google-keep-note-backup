@@ -1,0 +1,38 @@
+{
+  "name": "template-utils-typescript-webpack",
+  "version": "1.0.2",
+  "description": "template-utils-typescript-webpack utilities",
+  "main": "main.js",
+  "types": "main.d.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node main.js",
+    "build": "npx webpack --config webpack.config.js",
+    "fix-import": "npx import-fixer --groupImport --aggressive --transformRelativeImport --importQuote=single",
+    "preformat": "npm run fix-import",
+    "format": "npx prettier --config ./.prettierrc --write **/*.{ts,tsx,js,jsx,scss} *.{ts,js,json,MD}",
+    "test": "jest",
+    "test-ci": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synle/template-utils-typescript-webpack.git"
+  },
+  "author": "Sy Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/synle/template-utils-typescript-webpack/issues"
+  },
+  "homepage": "https://github.com/synle/template-utils-typescript-webpack#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.23",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
