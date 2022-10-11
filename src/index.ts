@@ -17,3 +17,7 @@ export default function doDefaultWork() {
   console.log(Calc.sum(3, 5));
   console.log('============================');
 }
+
+
+doWork();
+doDefaultWork();
