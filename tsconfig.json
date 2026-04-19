@@ -16,5 +16,6 @@
     "target": "es6",
     "esModuleInterop": true
   },
-  "exclude": ["node_modules", "testLib.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build", "testLib.ts"]
 }
