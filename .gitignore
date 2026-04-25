@@ -66,3 +66,32 @@ main.js
 
 credentials.json
 token.json
+
+# Standard junk files
+.DS_Store
+*.swp
+*.swo
+*.pyc
+*.pyo
+*.class
+*.o
+*.obj
+Thumbs.db
+desktop.ini
+.terraform
+.ipynb_checkpoints
+.history
+bin
+obj
+_build
+log
+tmp
+temp
+.serverless
+.expo
+.expo-shared
+.docusaurus
+.angular
+.svelte-kit
+Pods
+DerivedData
