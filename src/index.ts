@@ -1,6 +1,5 @@
 const fs = require('fs').promises;
 const path = require('path');
-const process = require('process');
 const { authenticate } = require('@google-cloud/local-auth');
 const { google } = require('googleapis');
 
@@ -33,7 +32,7 @@ async function loadSavedCredentialsIfExist() {
  * @param {OAuth2Client} client
  * @return {Promise<void>}
  */
-async function saveCredentials(client) {
+async function saveCredentials(client: any) {
   const content = await fs.readFile(CREDENTIALS_PATH);
   const keys = JSON.parse(content);
   const key = keys.installed || keys.web;
@@ -69,7 +68,7 @@ async function authorize() {
  * Lists the names and IDs of up to 10 files.
  * @param {OAuth2Client} authClient An authorized OAuth2 client.
  */
-async function listFiles(authClient) {
+async function listFiles(authClient: any) {
   const drive = google.drive({ version: 'v3', auth: authClient });
   const res = await drive.files.list({
     pageSize: 10,
@@ -82,7 +81,7 @@ async function listFiles(authClient) {
   }
 
   console.log('Files:');
-  files.map((file) => {
+  files.map((file: any) => {
     console.log(`${file.name} (${file.id})`);
   });
 }
