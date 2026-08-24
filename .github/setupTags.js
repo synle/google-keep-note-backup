@@ -3,7 +3,7 @@ const oldPackageJson = JSON.parse(fs.readFileSync('./package.json'));
 const oldVersion = oldPackageJson.version;
 
 // get the number from package version
-const versionSplits = oldPackageJson.version.split(/[\.-]/);
+const versionSplits = oldPackageJson.version.split(/[.-]/);
 const [major, minor, patch, postfix] = versionSplits;
 
 // get the number from now timestamps

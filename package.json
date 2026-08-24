@@ -12,7 +12,8 @@
     "format": "oxfmt --write .",
     "test": "jest",
     "test-ci": "jest",
-    "format:check": "oxfmt --check ."
+    "format:check": "oxfmt --check .",
+    "lint": "npx oxlint ."
   },
   "repository": {
     "type": "git",
