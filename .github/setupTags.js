@@ -1,4 +1,3 @@
-setup;
 const fs = require('fs');
 const oldPackageJson = JSON.parse(fs.readFileSync('./package.json'));
 const oldVersion = oldPackageJson.version;
