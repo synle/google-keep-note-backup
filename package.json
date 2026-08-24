@@ -1,6 +1,6 @@
 {
   "name": "google-keep-note-backup",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "google-keep-note-backup utilities",
   "main": "main.js",
   "types": "main.d.js",
